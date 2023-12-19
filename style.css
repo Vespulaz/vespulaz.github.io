@@ -17,7 +17,6 @@ button {
     cursor: pointer;
     font-weight: bold;
     display: block;
-    position: absolute;
 }
 
 .button {
@@ -26,15 +25,20 @@ button {
 }
 
 .yes {
-    margin-right: 20px;
+    margin-right: 900px;
     background-color: darkseagreen;
-    left: 43%;
+    position: absolute;
+    margin-left: 50%;
+}
+
+.no-move {
+    position: absolute;
 }
 
 .no {
     color: white;
     background-color: indianred;
-    right: 43%;
+    margin-right: -5%;
 }
 
 /* This is for yes alert message */
