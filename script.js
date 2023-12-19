@@ -3,6 +3,7 @@
 const b = document.querySelector(".no");
 
 b.addEventListener("mouseenter", () => {
+    b.classList.add("no-move");
     let newX, newY;
     let overlap;
     do {
@@ -33,13 +34,13 @@ b.addEventListener("mouseenter", () => {
 // });
 
 // Get the modal
-var modal = document.getElementById("myModal");
+const modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn = document.querySelector(".yes");
+const btn = document.querySelector(".yes");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+const span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal
 btn.onclick = function() {
@@ -53,7 +54,7 @@ span.onclick = function() {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-    if (event.target == modal) {
+    if (event.target === modal) {
         modal.style.display = "none";
     }
 }
